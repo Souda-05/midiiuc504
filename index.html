@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <!-- Font Awesome CSS (Latest Working Version) -->
+ <!-- Font Awesome (must come before Tailwind if possible) -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+integrity="sha512-4f2Q6kflKnFzIQUYhaZ1pyRz9cY3KTyhU2DEcQzRNNFXjqUdcZ5t8sO+3EuMGl+93U6f1uqCjBFoQd1TW+EfvA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+
+<!-- Tailwind (leave this after Font Awesome) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+  </head>
+  
+<body class="font-sans">
+
+  <!-- Navbar -->
+  <div class="navbar bg-base-100 px-4 md:px-16 shadow-md">
+    <div class="flex-1">
+      <img src="Images/Group 40071 (2).png" class="w-8 mr-2" alt="Logo" />
+      <a class="text-xl font-bold text-gray-800">Hero <span class="text-orange-500">Travel</span></a>
+    </div>
+    <div class="flex-none hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a class="text-orange-500 font-semibold">Home</a></li>
+        <li><a>Packages</a></li>
+        <li><a>Testimonial</a></li>
+        <li><a>Blog</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </div>
+    <div class="lg:hidden">
+      <button class="btn btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="px-4 md:px-16 mt-6">
+    <div class="rounded-lg overflow-hidden relative">
+      <img src="Images/Group 13 (1) (1).png" class="w-full h-[500px] object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white px-4 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold">Explore Your Travel</h1>
+        <p class="mt-2 mb-6 max-w-xl text-sm md:text-base">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+
+        <div class="flex flex-col md:flex-row gap-3 w-full md:w-auto">
+          <input type="text" placeholder="Where go" class="input input-bordered w-full md:w-40" />
+          <select class="select select-bordered w-full md:w-40">
+            <option disabled selected>When</option>
+            <option>Today</option>
+            <option>Tomorrow</option>
+          </select>
+          <select class="select select-bordered w-full md:w-40">
+            <option disabled selected>Select Type</option>
+            <option>Adventure</option>
+            <option>Leisure</option>
+          </select>
+          <button class="btn bg-orange-500 hover:bg-orange-600 text-white w-full md:w-36">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            Find Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Popular Tours -->
+  <section class="px-4 md:px-16 py-10">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">Our Popular Tours</h2>
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <p class="mb-4 text-gray-600">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. 
+        Sadoles dictumst nec nibh pellentesque.</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at.</li>
+          <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+          <li>Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
+        </ul>
+        <p class="mt-4 text-gray-600">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. 
+        Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt.</p>
+        <button class="btn bg-orange-500 hover:bg-orange-600 text-white mt-6">Read More</button>
+      </div>
+      <img src="Images/Rectangle 4.png" alt="Popular Tour" class="rounded-lg w-full h-full object-cover">
+    </div>
+  </section>
+<!-- Choose Your Destination -->
+<section class="px-4 md:px-16 py-12">
+  <h2 class="text-3xl font-bold text-center mb-4">Choose Your Destination</h2>
+  <p class="text-center text-gray-500 mb-10 max-w-xl mx-auto">
+    Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.<br />
+    Sodales dictumst nec nibh pellentesque.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- Row 1 -->
+    <div class="col-span-1 rounded-lg overflow-hidden relative">
+      <img src="Images/Rectangle 5.png" alt="Maldives" class="w-full h-48 md:h-full object-cover" />
+      <h3 class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl bg-black bg-opacity-30">Maldives</h3>
+    </div>
+    <div class="col-span-1 md:col-span-2 rounded-lg overflow-hidden relative">
+      <img src="Images/Rectangle 8.png" alt="Indonesia" class="w-full h-48 md:h-full object-cover" />
+      <h3 class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl bg-black bg-opacity-30">Indonesia</h3>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="rounded-lg overflow-hidden relative">
+      <img src="Images/Rectangle 6.png" alt="Srilanka" class="w-full h-48 object-cover" />
+      <h3 class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl bg-black bg-opacity-30">Srilanka</h3>
+    </div>
+    <div class="rounded-lg overflow-hidden relative">
+      <img src="Images/Rectangle 7.png" alt="North America" class="w-full h-48 object-cover" />
+      <h3 class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl bg-black bg-opacity-30">North America</h3>
+    </div>
+    <div class="rounded-lg overflow-hidden relative">
+      <img src="Images/Rectangle 9.png" alt="Kashmir" class="w-full h-48 object-cover" />
+      <h3 class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl bg-black bg-opacity-30">Kashmir</h3>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="rounded-lg overflow-hidden relative col-span-1">
+      <img src="Images/Rectangle 11.png" alt="Bangladesh" class="w-full h-48 object-cover" />
+      <h3 class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl bg-black bg-opacity-30">Bangladesh</h3>
+    </div>
+    <div class="rounded-lg overflow-hidden relative col-span-1 md:col-span-2">
+      <img src="Images/Rectangle 10.png" alt="Bandarban" class="w-full h-48 object-cover" />
+      <h3 class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl bg-black bg-opacity-30">Bandarban</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-100 text-center py-12 px-4">
+  <div class="max-w-2xl mx-auto">
+    <!-- Logo with text -->
+    <div class="flex items-center justify-center gap-2 mb-4">
+      <img src="Images/Group 40071 (2).png" alt="Logo" class="w-8 h-8" />
+      <h2 class="text-2xl font-bold text-gray-800">
+        Hero <span class="text-orange-500">Travel</span>
+      </h2>
+    </div>
+
+    <!-- Description -->
+    <p class="text-gray-500 mb-6 max-w-xl mx-auto">
+      Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti
+      vulputate. Leo erat maecenas vitae elementum ultricies nullam.
+    </p>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-6 text-xl text-gray-600 mb-6">
+      <a href="#"><i class="fab fa-twitter hover:text-orange-500"></i></a>
+      <a href="#"><i class="fab fa-facebook-f hover:text-orange-500"></i></a>
+      <a href="#"><i class="fab fa-instagram hover:text-orange-500"></i></a>
+      <a href="#"><i class="fab fa-github hover:text-orange-500"></i></a>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-gray-300 mb-4" />
+
+    <!-- Copyright -->
+    <p class="text-gray-500 text-sm">
+      2017, All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
