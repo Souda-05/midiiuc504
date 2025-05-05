@@ -17,8 +17,6 @@ crossorigin="anonymous"
 referrerpolicy="no-referrer"
 />
 
-<!-- Tailwind (leave this after Font Awesome) -->
-<script src="https://cdn.tailwindcss.com"></script>
 
 
   </head>
@@ -52,37 +50,40 @@ referrerpolicy="no-referrer"
   </div>
 
   <!-- Hero Section -->
-  <div class="px-4 md:px-16 mt-6">
-    <div class="rounded-lg overflow-hidden relative">
-      <img src="Images/Group 13 (1) (1).png" class="w-full h-[500px] object-cover" />
-      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white px-4 text-center">
-        <h1 class="text-3xl md:text-5xl font-bold">Explore Your Travel</h1>
-        <p class="mt-2 mb-6 max-w-xl text-sm md:text-base">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-
-        <div class="flex flex-col md:flex-row gap-3 w-full md:w-auto">
-          <input type="text" placeholder="Where go" class="input input-bordered w-full md:w-40" />
-          <select class="select select-bordered w-full md:w-40">
-            <option disabled selected>When</option>
-            <option>Today</option>
-            <option>Tomorrow</option>
-          </select>
-          <select class="select select-bordered w-full md:w-40">
-            <option disabled selected>Select Type</option>
-            <option>Adventure</option>
-            <option>Leisure</option>
-          </select>
-          <button class="btn bg-orange-500 hover:bg-orange-600 text-white w-full md:w-36">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-            Find Now
-          </button>
+  <section>
+    <div class="relative bg-cover bg-center h-[500px] mt-3 mx-3 rounded-lg overflow-hidden" style="background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);">
+      <div class="absolute inset-0  bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Explore Your Travel</h1>
+        <p class="mb-6 max-w-xl">
+          Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+        </p>
+        
+        <div class="relative z-20 flex justify-center mt-8 px-4">
+          <div class="flex flex-col md:flex-row gap-4 bg-white bg-opacity-50 p-6 rounded-lg w-full max-w-2xl">
+              
+            <input type="text" placeholder="Where go" class="input bg-white text-black w-full md:w-40 border border-gray-300 rounded-lg"/>
+            <select class="select w-full md:w-40 text-gray-500 bg-white border border-gray-300 rounded-lg ">
+              <option disabled selected>When</option>
+              <option>Today</option>
+              <option>Tomorrow</option>
+              
+            </select>
+                <select class="select w-full md:w-40 text-gray-500 bg-white border border-gray-300 rounded-lg ">
+              <option disabled selected>Select Type</option>
+              <option>Adventure</option>
+              <option>Leisure</option>
+             
+            </select>
+                <button class="btn bg-orange-500 text-white border-none hover:bg-orange-600 rounded-lg  md:w-40">
+              Find Now
+            </button>
+        
+          </div>
         </div>
+        
       </div>
     </div>
-  </div>
+</section>
 
   <!-- Our Popular Tours -->
   <section class="px-4 md:px-16 py-10">
